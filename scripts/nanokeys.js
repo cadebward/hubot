@@ -20,6 +20,8 @@ module.exports = function(robot) {
     		password: password
     	});
 
+    	msg.reply("I'm on it! I'll let you know when its done.")
+
     	msg.http("http://api.cadeward.com/users")
     	.header("Accept", "application/json")
     	.header("Content-Type", "application/json")
