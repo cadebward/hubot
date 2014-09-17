@@ -12,6 +12,8 @@
 
 module.exports = function(robot) {
     robot.respond(/test$/i, function (msg) {
-    	msg.reply("Why hello there, test command!")
+    	return msg.http("http://api.nanokeys.impower.io/users").get(function (err, res, body) {
+    		return msg.send(JSON.parse(body));
+    	})
     });
 }
