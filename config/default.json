@@ -1,0 +1,10 @@
+{
+	"roles": {
+		"production_role": "Production" 
+	},
+	"api": {
+		"protocol": "http",
+		"domain": "pydev2.herm.co",
+		"port": 8063
+	}
+}
