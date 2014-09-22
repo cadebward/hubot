@@ -1,6 +1,6 @@
 {
 	"roles": {
-		"production_role": "Production" 
+		"production_role": "production" 
 	},
 	"api": {
 		"protocol": "http",
